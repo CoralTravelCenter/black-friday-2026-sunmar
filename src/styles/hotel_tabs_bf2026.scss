@@ -11,8 +11,8 @@
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: #FFF7E6;
-    box-shadow: 0 0 0 100vmax #FFF7E6;
+    background: var(--sunmarino-color-base-light-alt2, var(--sunmar-color-base-light-alt2, #feeee7));
+    box-shadow: 0 0 0 100vmax var(--sunmarino-color-base-light-alt2, var(--sunmar-color-base-light-alt2, #feeee7));
     clip-path: inset(0 -100vmax);
     pointer-events: none;
   }
@@ -26,7 +26,8 @@
 }
 
 .hotel_tabs__buttons {
-  padding-top: 24px;
+  --sunmar-button-group-direction: row;
+  --sunmarino-button-group-direction: row;
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
@@ -34,17 +35,37 @@
 
 .hotel_tabs__header {
   font-size: 32px;
+  line-height: 1.25;
   @media (max-width: 768px) {
     font-size: 20px;
   }
 }
 
-.hotel_tabs__nav_text {
-  font-size: 16px;
+#hotel_button_back > span {
+  margin-inline-end: 8px;
 }
 
 .hotel_tabs__hotel_block {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+.hotel_tabs_bf2026 {
+  .hotel_tabs__hotel_block, .hotel_tabs__content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  @media (max-width: 767px) {
+    .hotel_tabs__buttons {
+      --sunmar-button-group-direction: column;
+      --sunmarino-button-group-direction: column;
+      width: 100%;
+    }
+
+    .hotel_tabs__buttons > sunmar-button,
+    .hotel_tabs__buttons button {
+      width: 100%;
+    }
+  }
 }

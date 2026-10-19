@@ -1,7 +1,7 @@
 function initHotelTabs(section) {
     if (section.dataset.hotelTabsInitialized) return;
 
-    const [firstButton, secondButton] = section.querySelectorAll('.hotel_tabs__buttons > coral-button');
+    const [firstButton, secondButton] = section.querySelectorAll('.hotel_tabs__buttons > sunmar-button');
     const firstPanel = section.querySelector('.hotel_tabs__content--1');
     const secondPanel = section.querySelector('.hotel_tabs__content--2');
     if (!firstButton || !secondButton || !firstPanel || !secondPanel) return;
@@ -9,8 +9,8 @@ function initHotelTabs(section) {
     function switchTab(showFirst) {
         firstPanel.hidden = !showFirst;
         secondPanel.hidden = showFirst;
-        firstButton.setAttribute('trait', showFirst ? 'vivid' : 'ghost');
-        secondButton.setAttribute('trait', showFirst ? 'ghost' : 'vivid');
+        firstButton.setAttribute('type', showFirst ? 'primary' : 'secondary');
+        secondButton.setAttribute('type', showFirst ? 'secondary' : 'primary');
         firstButton.querySelector('button')?.setAttribute('aria-pressed', String(showFirst));
         secondButton.querySelector('button')?.setAttribute('aria-pressed', String(!showFirst));
     }

@@ -1,28 +1,32 @@
-<section class="corallium hotel_tabs_bf2026">
+<section class="sunmarino bf2026-section hotel_tabs_bf2026" aria-labelledby="hotel_tabs_title">
     <div class="hotel_tabs__nav">
-        <coral-nav-button preset="left" id="hotel_button_back"></coral-nav-button>
-        <p class="hotel_tabs__nav_text">Выбрать другую страну</p>
+        <sunmar-button type="neutral">
+            <button type="button" id="hotel_button_back">
+                <span aria-hidden="true">←</span>
+                Выбрать другую страну
+            </button>
+        </sunmar-button>
     </div>
 
-    <h1 class="hotel_tabs__header">Подобрали отели, где можно классно провести отпуск в ноябре или совместить его с шопингом на Чёрную Пятницу:</h1>
+    <h2 class="hotel_tabs__header" id="hotel_tabs_title">Подобрали отели, где можно классно провести отпуск в ноябре или совместить его с шопингом на Чёрную Пятницу:</h2>
 
     <div class="hotel_tabs__hotel_block">
-        <div class="hotel_tabs__buttons">
-            <coral-button trait="vivid" shape="pill">
-                <button type="button" aria-pressed="true">Комбо: отдых + Черная Пятница</button>
-            </coral-button>
+        <sunmar-button-group class="hotel_tabs__buttons" role="group" aria-label="Вариант отдыха">
+            <sunmar-button type="primary">
+                <button type="button" id="hotel_combo_button" aria-controls="hotel_combo_panel" aria-pressed="true">Комбо: отдых + Черная Пятница</button>
+            </sunmar-button>
 
-            <coral-button trait="ghost" shape="pill">
-                <button type="button" aria-pressed="false">Отдых в ноябре</button>
-            </coral-button>
-        </div>
+            <sunmar-button type="secondary">
+                <button type="button" id="hotel_november_button" aria-controls="hotel_november_panel" aria-pressed="false">Отдых в ноябре</button>
+            </sunmar-button>
+        </sunmar-button-group>
 
         <div class="hotel_tabs__content">
-            <div class="hotel_tabs__content--1">
+            <div class="hotel_tabs__content--1" id="hotel_combo_panel" role="region" aria-labelledby="hotel_combo_button">
                 Блок 1
             </div>
 
-            <div class="hotel_tabs__content--2" hidden>
+            <div class="hotel_tabs__content--2" id="hotel_november_panel" role="region" aria-labelledby="hotel_november_button" hidden>
                 Блок 2
             </div>
         </div>

@@ -1,0 +1,35 @@
+.contact_bf2026 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+
+  .contact_bf2026__content {
+    display: grid;
+    gap: 12px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: stretch;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    .contact_bf2026__actions {
+      --sunmar-button-group-direction: column;
+      --sunmarino-button-group-direction: column;
+    }
+
+    sunmar-button, a {
+      width: 100%;
+    }
+  }
+}

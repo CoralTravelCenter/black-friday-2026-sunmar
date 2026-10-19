@@ -1,3 +1,3 @@
-export const KV_SELECTOR: string = "#kv_button";
-export const BUTTON_BACK_SELECTOR: string = "#hotel_button_back";
-export const CARDS_SELECTOR: string = ".corallium.country_slider";
+export const KV_SELECTOR = '#kv_button';
+export const CARDS_SELECTOR = '.cards-list';
+export const BUTTON_BACK_SELECTOR = '#hotel_button_back';

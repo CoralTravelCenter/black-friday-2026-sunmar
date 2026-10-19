@@ -1,56 +1,62 @@
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
+.bf2026-section {
+  font-family: var(--sunmarino-font-family, var(--sunmar-font-family, "Museo Sans Cyrl", "Segoe UI", sans-serif));
+  color: var(--sunmarino-color-text-dark, var(--sunmar-color-text-dark, #000));
+  padding: 20px 16px;
 
-.text1_bf2026, .text2_bf2026 {
-  font-size: 16px;
-}
+  &, * {
+    box-sizing: border-box;
+  }
 
-.corallium {
-  padding: calc(40px / 2) 16px;
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .text1_bf2026, .text2_bf2026 {
+    font-size: var(--sunmarino-font-size-base, var(--sunmar-font-size-base, 16px));
+    line-height: 1.5;
+  }
+
   @media (min-width: 992px) {
-    padding: calc(64px / 2) 0;
+    padding: 32px 0;
   }
 }
 
-.corallium.country_slider {
+.bf2026-section.country_slider {
   @media (max-width: 767px) {
     padding-right: 0;
-  }
-}
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
+    .embla__viewport {
+      overflow: hidden;
+    }
 
-@media (max-width: 767px) {
-  .embla__viewport {
-    overflow: hidden;
-  }
+    .embla__container {
+      display: flex;
+      touch-action: pan-y pinch-zoom;
+    }
 
-  .embla__container {
-    display: flex;
-    touch-action: pan-y pinch-zoom;
-  }
+    .embla__slide {
+      flex: 0 0 85%;
+      min-width: 0;
+    }
 
-  .embla__slide {
-    flex: 0 0 85%;
-    min-width: 0;
-  }
+    .embla__dots .embla__dot {
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      border: 0;
+      border-radius: 50%;
+      background-color: var(--sunmarino-color-btn-stroke-light, var(--sunmar-color-btn-stroke-light, #e5e5e5));
+      cursor: pointer;
+    }
 
-  .embla__dots .embla__dot {
-    width: 10px;
-    height: 10px;
-    padding: 0;
-    border: 0;
-    border-radius: 50%;
-    background-color: #b9e8ff;
-    cursor: pointer;
-  }
-
-  .embla__dots .embla__dot--selected {
-    background-color: #077dad;
+    .embla__dots .embla__dot--selected {
+      background-color: var(--sunmarino-color-brand-red, var(--sunmar-color-brand-red, #e9292c));
+    }
   }
 }
