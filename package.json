@@ -16,6 +16,7 @@
     "graphify": "graphify extract . --code-only && graphify cluster-only ."
   },
   "devDependencies": {
+    "@coraltravelcenter/b2c-landing-builder": "^3.0.0",
     "sass": "^1.102.0"
   },
   "dependencies": {

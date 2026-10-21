@@ -1,27 +1,7 @@
-import EmblaCarousel from 'embla-carousel';
-import { addDotButtonAndClickHandlers } from './embla_carousel/embla-buttons.js';
+import {init_embla_dots} from "./card_bf2026_logic/init_embla_dots.js";
+import {filter_block} from "./card_bf2026_logic/filter_block.js";
 
 export default function init() {
-    const containerNode = document.querySelector('#embla-viewport');
-    const viewportNode = containerNode.parentElement;
-    const mobileMedia = window.matchMedia('(max-width: 767px)');
-    let emblaApi;
-    const dotsNode = document.querySelector('.embla__dots');
-
-    const updateCarousel = () => {
-        if (mobileMedia.matches) {
-            emblaApi = EmblaCarousel(viewportNode, {
-                container: containerNode,
-                align: 'start'
-            })
-            addDotButtonAndClickHandlers(emblaApi, dotsNode);
-        } else {
-            emblaApi?.destroy()
-            emblaApi = undefined
-            dotsNode.replaceChildren()
-        }
-    }
-
-    mobileMedia.addEventListener('change', updateCarousel);
-    updateCarousel();
+    init_embla_dots();
+    filter_block();
 }
