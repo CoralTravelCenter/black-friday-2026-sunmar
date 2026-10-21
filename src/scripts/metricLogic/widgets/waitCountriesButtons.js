@@ -8,7 +8,7 @@ export function waitCountriesButtons() {
   container.addEventListener("click", (event) => {
     if (!(event.target instanceof Element)) return;
 
-    const button = event.target.closest("button.card__button");
+    const button = event.target.closest("sunmar-button.card__button");
     if (!button || !container.contains(button)) return;
 
     const card = button.closest(".card");

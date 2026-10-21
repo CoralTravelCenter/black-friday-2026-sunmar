@@ -11,8 +11,8 @@ function initHotelTabs(section) {
         secondPanel.hidden = showFirst;
         firstButton.setAttribute('type', showFirst ? 'primary' : 'secondary');
         secondButton.setAttribute('type', showFirst ? 'secondary' : 'primary');
-        firstButton.querySelector('button')?.setAttribute('aria-pressed', String(showFirst));
-        secondButton.querySelector('button')?.setAttribute('aria-pressed', String(!showFirst));
+        firstButton.setAttribute('aria-pressed', String(showFirst));
+        secondButton.setAttribute('aria-pressed', String(!showFirst));
     }
 
     firstButton.addEventListener('click', () => switchTab(true));

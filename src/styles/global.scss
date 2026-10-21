@@ -71,3 +71,7 @@
     }
   }
 }
+
+.row-outer-container .row-container:has(.sunmarino) {
+  overflow-x: visible;
+}

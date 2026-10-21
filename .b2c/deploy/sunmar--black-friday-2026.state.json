@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "assets": {
+    "card_images/icon_1.webp": {
+      "path": "card_images/icon_1.webp",
+      "sha256": "13f326e12cf0d9de9da1288328f94c3bf4c59f6a15194270b6409a6b047f3f72",
+      "size": 79218,
+      "url": "https://b2ccdn.sunmar.ru/content/landing-pages/black-friday-2026/card_images/icon_1.webp",
+      "managed": true
+    },
+    "card_images/icon_3.webp": {
+      "path": "card_images/icon_3.webp",
+      "sha256": "4509906ce93d8217bb9e66ae0dc565b83c266ce998dbf17adf1e561c71bc0947",
+      "size": 79428,
+      "url": "https://b2ccdn.sunmar.ru/content/landing-pages/black-friday-2026/card_images/icon_3.webp",
+      "managed": true
+    },
+    "card_images/icon_2.webp": {
+      "path": "card_images/icon_2.webp",
+      "sha256": "afd3ab25222b624d29817c624caaf8c929fbb7172f91c62937deeff380cbb13b",
+      "size": 75742,
+      "url": "https://b2ccdn.sunmar.ru/content/landing-pages/black-friday-2026/card_images/icon_2.webp",
+      "managed": true
+    },
+    "card_images/icon_5.webp": {
+      "path": "card_images/icon_5.webp",
+      "sha256": "7673ef112e3f8cbf51dcbaaed5046533276799550acaa2e386765b18175915a6",
+      "size": 95932,
+      "url": "https://b2ccdn.sunmar.ru/content/landing-pages/black-friday-2026/card_images/icon_5.webp",
+      "managed": true
+    },
+    "card_images/icon_4.webp": {
+      "path": "card_images/icon_4.webp",
+      "sha256": "01611d101e0e64f800e53f2ce0ddac0353dc4248fc2de7fb1680951439e2322e",
+      "size": 89902,
+      "url": "https://b2ccdn.sunmar.ru/content/landing-pages/black-friday-2026/card_images/icon_4.webp",
+      "managed": true
+    },
+    "card_images/icon_6.webp": {
+      "path": "card_images/icon_6.webp",
+      "sha256": "e2bb9e09d657f9bf78d169b2661fdbcfbda81da49e373cbae7d4254ffee45884",
+      "size": 91146,
+      "url": "https://b2ccdn.sunmar.ru/content/landing-pages/black-friday-2026/card_images/icon_6.webp",
+      "managed": true
+    },
+    "kv/kv.webp": {
+      "path": "kv/kv.webp",
+      "sha256": "1c8c3b9fe29cd1d54c7e2367a33e49d92092a0c0bb5b1b494961185e08b36072",
+      "size": 141394,
+      "url": "https://b2ccdn.sunmar.ru/content/landing-pages/black-friday-2026/kv/kv.webp",
+      "managed": true
+    },
+    "kv/kv_mob.webp": {
+      "path": "kv/kv_mob.webp",
+      "sha256": "7f088cf77485b09bb295dce31960eb5875cee01c002e6a2cc2636291e5173f48",
+      "size": 77302,
+      "url": "https://b2ccdn.sunmar.ru/content/landing-pages/black-friday-2026/kv/kv_mob.webp",
+      "managed": true
+    }
+  }
+}
