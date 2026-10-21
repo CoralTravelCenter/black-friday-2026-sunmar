@@ -33,6 +33,9 @@
         background-position: bottom right;
         background-size: auto min(100%, 240px), cover;
       }
+
+      container-type: inline-size;
+      container-name: my-card;
     }
 
     @media (max-width: 520px) and (min-width: 425px) {
@@ -78,11 +81,7 @@
   .card__text {
     font-size: 16px;
     overflow-wrap: break-word;
-    max-width: 192px;
-    
-    @media (min-width: 1024px) {
-      max-width: 300px;
-    }
+    max-width: 300px;
   }
 
   .card__title {
@@ -115,6 +114,18 @@
 
     @media (max-width: 767px) {
       display: flex;
+    }
+  }
+
+  @container my-card (min-width: 425px) {
+    .card__text {
+      max-width: 350px;
+    }
+  }
+
+  @container my-card (max-width: 425px) {
+    .card__text {
+      max-width: 192px;
     }
   }
 }
