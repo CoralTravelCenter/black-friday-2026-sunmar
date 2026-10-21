@@ -3,6 +3,17 @@
   color: var(--sunmarino-color-text-dark, var(--sunmar-color-text-dark, #000));
   padding: 20px 16px;
 
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: #F1F7FB;
+    box-shadow: 0 0 0 100vmax #F1F7FB;
+    clip-path: inset(0 -100vmax);
+    pointer-events: none;
+  }
+
   &, * {
     box-sizing: border-box;
   }

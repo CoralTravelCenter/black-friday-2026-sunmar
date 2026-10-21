@@ -4,7 +4,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 
-    @media (max-width: 1023px) {
+    @media (max-width: 1400px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -31,7 +31,7 @@
                 linear-gradient(138deg, var(--sunmarino-color-btn-bg-secondary-pressed, var(--sunmar-color-btn-bg-secondary-pressed, #061a3e)) 0%, var(--sunmarino-color-brand-blue, var(--sunmar-color-brand-blue, #21366a)) 100%);
         background-repeat: no-repeat;
         background-position: bottom right;
-        background-size: cover;
+        background-size: auto min(100%, 240px), cover;
       }
     }
 
@@ -79,6 +79,10 @@
     font-size: 16px;
     overflow-wrap: break-word;
     max-width: 192px;
+    
+    @media (min-width: 1024px) {
+      max-width: 300px;
+    }
   }
 
   .card__title {
