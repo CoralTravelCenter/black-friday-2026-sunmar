@@ -1,6 +1,4 @@
 .bf2026-section {
-  font-family: var(--sunmarino-font-family, var(--sunmar-font-family, "Museo Sans Cyrl", "Segoe UI", sans-serif));
-  color: var(--sunmarino-color-text-dark, var(--sunmar-color-text-dark, #000));
   padding: 20px 16px;
 
   &::before {
@@ -74,4 +72,10 @@
 
 .row-outer-container .row-container:has(.sunmarino) {
   overflow-x: visible;
+}
+
+sunmar-button::part(control) {
+  font-size: 12px;
+  padding: 12px 32px;
+  line-height: 1;
 }

@@ -1,14 +1,7 @@
 .bf2026-kv {
   .kv__header {
-    font-weight: 700;
-  }
-
-  .text-preface {
-    display: inline-block;
-    width: fit-content;
-    background-color: var(--sunmarino-color-base-light, var(--sunmar-color-base-light, #fff));
-    color: var(--sunmarino-color-brand-blue, var(--sunmar-color-brand-blue, #21366a));
-    border-radius: var(--sunmarino-radius-xs, var(--sunmar-radius-xs, 8px));
-    padding: 4px 8px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 56px;
   }
 }
