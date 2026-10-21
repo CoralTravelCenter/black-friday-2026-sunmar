@@ -1,4 +1,4 @@
-<section class="sunmarino bf2026-section hotel_tabs_bf2026" aria-labelledby="hotel_tabs_title">
+<section class="sunmarino bf2026-section hotel_tabs_bf2026" id="hotels-set" aria-labelledby="hotel_tabs_title">
     <div class="hotel_tabs__nav">
         <sunmar-button type="neutral" id="hotel_button_back">
             <span aria-hidden="true">←</span>
@@ -6,21 +6,28 @@
         </sunmar-button>
     </div>
 
-    <h2 class="hotel_tabs__header" id="hotel_tabs_title">Подобрали отели, где можно классно отдохнуть в ноябре или совместить отдых с шопингом на Черную пятницу:</h2>
+    <h2 class="hotel_tabs__header" id="hotel_tabs_title">Подобрали отели, где можно классно отдохнуть в ноябре
+        или совместить отдых с шопингом на Черную пятницу:</h2>
 
     <div class="hotel_tabs__hotel_block">
         <sunmar-button-group class="hotel_tabs__buttons" role="group" aria-label="Вариант отдыха">
-            <sunmar-button type="primary" id="hotel_combo_button" aria-controls="hotel_combo_panel" aria-pressed="true">Комбо: отдых + Черная пятница</sunmar-button>
+            <sunmar-button type="primary" id="hotel_combo_button" aria-controls="hotel_combo_panel" aria-pressed="true">
+                Комбо: отдых + Черная пятница
+            </sunmar-button>
 
-            <sunmar-button type="secondary" id="hotel_november_button" aria-controls="hotel_november_panel" aria-pressed="false">Отдых в ноябре</sunmar-button>
+            <sunmar-button type="secondary" id="hotel_november_button" aria-controls="hotel_november_panel"
+                           aria-pressed="false">Отдых в ноябре
+            </sunmar-button>
         </sunmar-button-group>
 
         <div class="hotel_tabs__content">
-            <div class="hotel_tabs__content--1" id="hotel_combo_panel" role="region" aria-labelledby="hotel_combo_button">
+            <div class="hotel_tabs__content--1" id="hotel_combo_panel" role="region"
+                 aria-labelledby="hotel_combo_button">
                 Блок 1
             </div>
 
-            <div class="hotel_tabs__content--2" id="hotel_november_panel" role="region" aria-labelledby="hotel_november_button" hidden>
+            <div class="hotel_tabs__content--2" id="hotel_november_panel" role="region"
+                 aria-labelledby="hotel_november_button" hidden>
                 Блок 2
             </div>
         </div>

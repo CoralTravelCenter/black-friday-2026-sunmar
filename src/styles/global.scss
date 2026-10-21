@@ -73,9 +73,3 @@
 .row-outer-container .row-container:has(.sunmarino) {
   overflow-x: visible;
 }
-
-sunmar-button::part(control) {
-  font-size: 12px;
-  padding: 12px 32px;
-  line-height: 1;
-}
