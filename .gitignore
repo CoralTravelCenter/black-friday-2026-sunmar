@@ -36,3 +36,5 @@ Thumbs.db
 *.ntvs*
 *.njsproj
 *.sln
+/not_use/
+/not_use
