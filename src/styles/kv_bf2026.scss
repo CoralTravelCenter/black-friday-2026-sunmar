@@ -1,4 +1,8 @@
 .bf2026-kv {
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
   .kv__header {
     font-weight: 600;
     font-size: 56px;

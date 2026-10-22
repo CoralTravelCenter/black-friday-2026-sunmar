@@ -66,18 +66,16 @@
   }
 }
 
-#hotel_button_back > span {
-  margin-inline-end: 8px;
+#hotel_button_back {
+  display: inline-flex;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media (max-width: 767px) {
-  .hotel_tabs_bf2026 #hotel_button_back::part(control) {
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-  }
-
   #hotel_button_back .hotel_tabs__back-label {
    display: none;
   }
@@ -94,6 +92,7 @@
   flex-direction: column;
   gap: 24px;
 }
+
 .hotel_tabs_bf2026 {
   .hotel_tabs__hotel_block, .hotel_tabs__content {
     width: 100%;
@@ -105,6 +104,12 @@
       --sunmar-button-group-direction: column;
       --sunmarino-button-group-direction: column;
       width: 100%;
+    }
+
+    sunmar-button::part(control) {
+      padding: 12px 32px;
+      font-size: 12px;
+      line-height: 1;
     }
 
     .hotel_tabs__buttons > sunmar-button,
