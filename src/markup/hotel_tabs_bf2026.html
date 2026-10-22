@@ -1,8 +1,8 @@
 <section class="sunmarino bf2026-section hotel_tabs_bf2026" id="hotels-set" aria-labelledby="hotel_tabs_title">
-    <h2 class="hotel_tabs__header" id="hotel_tabs_title">Подобрали отели, где можно классно отдохнуть в ноябре
-        или совместить отдых с шопингом на Черную пятницу:</h2>
+    <div class="hotel_tabs__sticky-header">
+        <h2 class="hotel_tabs__header" id="hotel_tabs_title">Подобрали отели, где можно классно отдохнуть в ноябре
+            или совместить отдых с шопингом на Черную пятницу:</h2>
 
-    <div class="hotel_tabs__hotel_block">
         <sunmar-button-group class="hotel_tabs__buttons" role="group" aria-label="Вариант отдыха">
             <sunmar-button type="primary" id="hotel_combo_button" aria-controls="hotel_combo_panel" aria-pressed="true">
                 Комбо: отдых + Черная пятница
@@ -12,24 +12,51 @@
                            aria-pressed="false">Отдых в ноябре
             </sunmar-button>
         </sunmar-button-group>
+    </div>
 
+    <div class="hotel_tabs__hotel_block">
         <div class="hotel_tabs__content">
-            <div class="hotel_tabs__content--1" id="hotel_combo_panel" role="region"
-                 aria-labelledby="hotel_combo_button">
-                Блок 1
+            <div class="hotel_tabs__content--1" id="hotel_combo_panel" role="region" aria-labelledby="hotel_combo_button">
+                <script type="application/json" data-offre-vue="">
+                    {
+                        "options": {
+                            "chartersOnly": true,
+                            "groupBy": "countries",
+                            "nights": [7],
+                            "timeframe": {
+                                "fixed": ["2026-11-21", "2026-11-22"],
+                                "monthly": true
+                            },
+                            "sortBy": "source"
+                        },
+                        "hotels": [12880, 8352, 654, 9910, 947, 588, 973, 952, 10610, 703, 300, 11754, 18408, 13570, 906, 320, 4074, 173, 74242, 50000, 80, 76, 76467, 19935, 27270, 34519, 9965, 42, 10796, 98, 96, 119, 29797, 9416, 2060, 24797, 8230, 15670, 31666, 25153, 23228, 2152, 35759, 1982, 2039, 7559, 2074, 35893, 13969, 58805, 23513, 1905, 56898, 35932, 4430, 1851, 8325, 54398, 1855, 33994, 23155, 23786, 8209, 31474, 11281, 51454, 2248, 2437, 47176, 29795, 58376, 2461, 2265, 54399, 2184, 2549, 28053, 15453, 2466, 2264, 3520, 83351, 3516, 73865, 9434, 56759, 3522, 3491, 3540, 73904, 7297, 73891, 6883, 56755, 82963]
+                    }
+                </script>
             </div>
 
-            <div class="hotel_tabs__content--2" id="hotel_november_panel" role="region"
-                 aria-labelledby="hotel_november_button" hidden>
-                Блок 2
+            <div class="hotel_tabs__content--2" id="hotel_november_panel" role="region" aria-labelledby="hotel_november_button" hidden="">
+                <script type="application/json" data-offre-vue="">
+                    {
+                        "options": {
+                            "chartersOnly": true,
+                            "groupBy": "countries",
+                            "nights": [7, 8, 9, 10, 11, 12, 14, 6],
+                            "timeframe": {
+                                "fixed": ["2026-11-01", "2026-11-30"],
+                                "monthly": true
+                            },
+                            "sortBy": "source"
+                        },
+                        "hotels": [12880, 8352, 654, 9910, 947, 588, 973, 952, 10610, 703, 300, 11754, 18408, 13570, 906, 320, 4074, 173, 74242, 50000, 80, 76, 76467, 19935, 27270, 34519, 9965, 42, 10796, 98, 96, 119, 29797, 9416, 2060, 24797, 8230, 15670, 31666, 25153, 23228, 2152, 35759, 1982, 2039, 7559, 2074, 35893, 13969, 58805, 23513, 1905, 56898, 35932, 4430, 1851, 8325, 54398, 1855, 33994, 23155, 23786, 8209, 31474, 11281, 51454, 2248, 2437, 47176, 29795, 58376, 2461, 2265, 54399, 2184, 2549, 28053, 15453, 2466, 2264, 3520, 83351, 3516, 73865, 9434, 56759, 3522, 3491, 3540, 73904, 7297, 73891, 6883, 56755, 82963]
+                    }
+                </script>
             </div>
         </div>
 
-        <div id="trigger-point"></div>
         <div class="hotel_tabs__nav">
-            <sunmar-button type="neutral" id="hotel_button_back" class="is-fixed">
-                <span aria-hidden="true">←</span>
-                Выбрать другую страну
+            <sunmar-button type="neutral" id="hotel_button_back" aria-label="Выбрать другую страну">
+                <span class="hotel_tabs__back-arrow" aria-hidden="true">←</span>
+                <span class="hotel_tabs__back-label">Выбрать другую страну</span>
             </sunmar-button>
         </div>
     </div>
