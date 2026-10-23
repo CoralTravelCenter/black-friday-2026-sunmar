@@ -28,7 +28,7 @@ export function scrollHotelTabs() {
     initHotelTabs(section);
 
     const backButton = section.querySelector('#hotel_button_back');
-    const target = document.querySelector('.cards-list');
+    const target = document.querySelector('.text1_bf2026');
 
     if (backButton && target && !backButton.dataset.hotelBackInitialized) {
         backButton.addEventListener('click', () => {
