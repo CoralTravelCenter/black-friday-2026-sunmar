@@ -1,7 +1,7 @@
 export default {
   schemaVersion: 2,
   template: {
-    version: "2.16.0",
+    version: "2.17.0",
   },
   builder: {
     minVersion: "2.14.0",
